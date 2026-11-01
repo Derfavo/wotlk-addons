@@ -1,38 +1,20 @@
-# WotLK Addons
+# Rebuffed Addons for WoW 3.3.5a
 
-Four addons for World of Warcraft 3.3.5a (Interface 30300), developed for Whitemane Frostmourne Rebuffed.
+Each addon now has its own repository, version history and releases. Use these projects for new downloads and bug reports:
 
-| Addon | Version | What it does |
+| Addon | Current version | Downloads |
 | --- | --- | --- |
-| [RebuffedHealbot](RebuffedHealbot) | 0.6.3 | Healing frames with click bindings, spell suggestions and personal buff reminders |
-| [RebuffedItemLevel](RebuffedItemLevel) | 1.2.3 | Item level and GearScore in character frames, inspect frames and player tooltips |
-| [RebuffedRaidMarket](RebuffedRaidMarket) | 1.2.0 | Organizes raid recruitment and trade messages from a chat channel and posts your own ads |
-| [RebuffedUpgrade](RebuffedUpgrade) | 1.0.1 | Rates equipment for your current specialization when you hover over an item |
+| [RebuffedHealbot](https://github.com/Derfavo/RebuffedHealbot) | 0.6.5 | [Releases](https://github.com/Derfavo/RebuffedHealbot/releases/latest) |
+| [RebuffedItemLevel](https://github.com/Derfavo/RebuffedItemLevel) | 1.2.5 | [Releases](https://github.com/Derfavo/RebuffedItemLevel/releases/latest) |
+| [RebuffedRaidMarket](https://github.com/Derfavo/RebuffedRaidMarket) | 1.2.2 | [Releases](https://github.com/Derfavo/RebuffedRaidMarket/releases/latest) |
+| [RebuffedUpgrade](https://github.com/Derfavo/RebuffedUpgrade) | 1.0.3 | [Releases](https://github.com/Derfavo/RebuffedUpgrade/releases/latest) |
 
 ## Installation
 
-1. Click **Code → Download ZIP** above and extract the archive.
-2. Close WoW completely.
-3. Copy the addon folders you want directly into `World of Warcraft/Interface/AddOns/`. For example, the healing addon should have this path: `AddOns/RebuffedHealbot/RebuffedHealbot.toc`.
-4. Start WoW and enable the addons on the character selection screen.
+Download a release's Source code (zip), extract it, close WoW and copy the folder named after the addon into `Interface/AddOns/`. Do not copy the outer repository folder. RebuffedUpgrade also requires Pawn 1.3.8 for WoW 3.3.5a. RebuffedRaidMarket needs RebuffedItemLevel to include GearScore in your own ads.
 
-Do not copy the outer `wotlk-addons-main` folder into AddOns. To update an addon, replace its folder. Settings are stored in the WTF folder and are kept when you replace the addon files. If you are upgrading from ChronixHeal, follow the [migration instructions](RebuffedHealbot/README.md#upgrading-from-chronixheal) first.
+## Update notices
 
-RebuffedHealbot and RebuffedItemLevel work independently. RebuffedRaidMarket needs RebuffedItemLevel to include GearScore in your own ads; browsing channel messages works without it. RebuffedUpgrade requires **Pawn 1.3.8 for WoW 3.3.5a**, which is not included here.
+Version checks run entirely inside the game, following DBM's approach. Addons exchange versions with party, raid and guild members. A newer release must be confirmed by two different players before an update notice appears. Confirmed versions are remembered for later logins. There is no Windows helper, central online check or automatic installation. `/rebuffedupdates` shows your installed versions and confirmed updates.
 
-## Getting started
-
-| Addon | How to open or use it |
-| --- | --- |
-| RebuffedHealbot | Minimap icon or `…` in the healing frame |
-| RebuffedItemLevel | Open your character frame or hover over a player |
-| RebuffedRaidMarket | `/raidmarkt`, `/rrm` or the minimap icon; `/raidpost` opens your own ad |
-| RebuffedUpgrade | Hover over equipment; `/upgrade` shows the active rating scale |
-
-Each addon has its own README with settings and limitations. These addons target the original 3.3.5a client. Retail and newer Classic clients are not supported. Differences in server APIs may affect individual features.
-
-## Reporting bugs
-
-Include the addon name, its version and the steps needed to reproduce the problem. The client language, other involved addons and the Lua error message are also useful. For a misclassified chat ad, include the message with player names removed.
-
-This repository contains addon files and documentation. Saved character data and other installed addons are not included.
+This repository is now a directory of the separate projects. Its earlier combined source is kept in the commit history.

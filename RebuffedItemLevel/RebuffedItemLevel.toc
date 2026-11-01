@@ -1,8 +1,0 @@
-## Interface: 30300
-## Title: Rebuffed ItemLevel
-## Notes: Equipped average item level and GearScore in character, inspect and player tooltips.
-## Notes-deDE: Angelegtes Itemlevel und GearScore im Charakterfenster, beim Untersuchen und im Spieler-Tooltip.
-## Author: Custom
-## Version: 1.2.3
-
-RebuffedItemLevel.lua
