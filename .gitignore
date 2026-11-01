@@ -1,0 +1,14 @@
+# Local game data and development files
+WTF/
+Cache/
+Logs/
+Screenshots/
+SavedVariables/
+work/
+__pycache__/
+*.pyc
+*.bak
+*.log
+*.zip
+.DS_Store
+Thumbs.db

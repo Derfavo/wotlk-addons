@@ -1,0 +1,15 @@
+## Interface: 30300
+## Title: ChronixHeal
+## Notes: Multi-class healing grid and recommendations for WoW 3.3.5a
+## Author: Chronix
+## Version: 0.6.2
+## SavedVariables: ChronixHealDB
+locale.lua
+config.lua
+profiles.lua
+modes.lua
+settings.lua
+minimap.lua
+priorities.lua
+engine.lua
+core.lua
