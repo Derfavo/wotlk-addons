@@ -1,29 +1,31 @@
 # RebuffedRaidMarket
 
-RebuffedRaidMarket sammelt Raidgesuche und Handelsanzeigen aus einem einstellbaren Chat. Das Fenster sortiert Raidanzeigen nach Raidnamen und Handelsanzeigen unter **Kaufen** oder **Verkaufen**. Ein Klick auf eine Anzeige öffnet eine Flüsternachricht an den Verfasser.
+RebuffedRaidMarket collects raid recruitment and trade messages from a chat source you choose. The window groups raid ads by raid name and trade ads into buying and selling sections. Clicking an ad opens a whisper draft addressed to its author.
 
-## Chat auswählen
+The current window labels are German: **Kaufen** means buying, **Verkaufen** means selling, and **Eigene Anzeige** opens your own ad.
 
-Das Minimap-Symbol, `/raidmarkt` oder `/rrm` öffnen das Fenster. Oben den Kanalnamen oder die Kanalnummer eintragen. Als Vorgabe ist `world` eingetragen. Möglich sind auch Gilden-, Gruppen-, Raid- und Sagen-Chat, zum Beispiel `g`, `p`, `raid` oder `s`.
+## Choosing a chat source
 
-Das Addon tritt keinem Kanal selbst bei. Es erfasst nur neue Nachrichten aus dem ausgewählten Chat. Nach `/reload` oder einem Kanalwechsel ist die Liste zunächst leer.
+Open the window through the minimap icon, `/raidmarkt` or `/rrm`. Enter the channel name or number at the top. The default is `world`. Guild, party, raid and say chat are also supported, for example `g`, `p`, `raid` or `s`.
 
-Die Erkennung verwendet deutsche und englische Schlüsselwörter. Anzeigen für mehrere Raids erscheinen in den jeweiligen Rubriken. Nachrichten werden nach 15 Minuten entfernt; die Liste enthält höchstens 300 Einträge. Wiederholungen derselben Anzeige aktualisieren den Zeitstempel.
+The addon does not join channels for you. It only records new messages from the selected source. The list starts empty after `/reload` or a channel change.
 
-Raidmarkierungen wie `{star}` oder `{rt1}` werden als Symbole angezeigt. Itemlinks lassen sich mit der Maus ansehen. Das Minimap-Symbol lässt sich mit gedrückter linker Maustaste verschieben.
+Classification uses German and English keywords. Ads mentioning several raids appear in each relevant section. Messages expire after 15 minutes, and the list holds up to 300 entries. Repeated ads refresh their timestamp.
 
-## Eigene Anzeige
+Raid markers such as `{star}` and `{rt1}` are shown as icons. Hover over item links to see their tooltips. Hold the left mouse button and drag to move the minimap icon.
 
-**Eigene Anzeige** oder `/raidpost` öffnen den Entwurf. Dort LFM oder LFG, Klasse bzw. Skillung, Rolle und die gewünschten Raids auswählen. Mehrere Raids sind möglich. Größe und Schwierigkeit lassen sich je Raid einstellen; „Beliebig“ lässt die jeweilige Angabe weg.
+## Posting your own ad
 
-Der GearScore stammt aus RebuffedItemLevel und wird auf eine Nachkommastelle in Tausendern gerundet, etwa `3.6k GS`. Für diese Funktion muss RebuffedItemLevel aktiviert sein und bereits einen gültigen Wert liefern.
+**Eigene Anzeige** or `/raidpost` opens the draft. Choose LFM or LFG, your class or specialization, your role and the raids you want. You can select several raids and set the size and difficulty for each one. **Beliebig** means any and omits that detail from the message.
 
-Die erzeugte Nachricht ist auf Englisch. Bekannte deutsche Klassen, Skillungen und Zusatzangaben werden übersetzt. Freitext ist auf bekannte Begriffe begrenzt. Unbekannte Wörter verhindern den Start und müssen angepasst werden; eine allgemeine Textübersetzung findet nicht statt.
+GearScore comes from RebuffedItemLevel and is rounded to one decimal place in thousands, for example `3.6k GS`. RebuffedItemLevel must be enabled and have a valid value for posting to work.
 
-**Start** sendet die Anzeige sofort in den ausgewählten Chat und danach alle fünf Minuten. Die Wiederholung endet, sobald du einer Gruppe oder einem Raid beitrittst oder **Stopp** drückst. Auch LFM-Anzeigen können nur außerhalb einer Gruppe gestartet werden. Das Schließen des Fensters beendet die Wiederholung nicht.
+Generated messages are in English. Known German class names, specializations and extra details are translated. Text fields only accept recognized terms. Unknown words prevent posting until you change them; this is not a general text translation service.
 
-Änderungen am Entwurf oder Kanal stoppen die laufende Anzeige. Nach `/reload`, einem Neustart oder dem Verlassen einer Gruppe muss sie von Hand gestartet werden. Der Entwurf wird pro Charakter gespeichert. Nachrichten über 255 Bytes werden nicht gesendet.
+**Start** sends the ad immediately to the selected chat, then every five minutes. Posting stops when you join a party or raid, or press **Stopp**. LFM ads can also only be started while ungrouped. Closing the window does not stop posting.
 
-## Grenzen
+Editing the draft or changing the channel stops the running ad. After `/reload`, restarting the game or leaving a group, you must start it manually. Drafts are saved per character. Messages longer than 255 bytes are not sent.
 
-Die Einordnung folgt dem Nachrichtentext und kann bei Abkürzungen oder ungewöhnlichen Formulierungen falsch liegen. Es gibt keine Suche im bisherigen Chatverlauf und keine Prüfung, ob eine Anzeige noch freie Plätze hat. Die Kanalübersicht benötigt keine weiteren Addons.
+## Limitations
+
+Classification depends on message text and may get abbreviations or unusual wording wrong. The addon cannot search earlier chat history or check whether an advertised group still has room. Browsing channel messages does not require any other addons.

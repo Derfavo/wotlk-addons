@@ -1,27 +1,27 @@
 # RebuffedItemLevel
 
-Zeigt das durchschnittliche angelegte Itemlevel und den GearScore im eigenen Charakterfenster, beim Untersuchen und neben dem Namen im Spieler-Tooltip. Nach der Installation ist keine Einrichtung nötig.
+Shows average equipped item level and GearScore in your character frame, when inspecting another player, and next to the name in player tooltips. No setup is needed after installation.
 
-## Anzeige
+## Display
 
-Im eigenen Charakterfenster stehen die Werte unter der Titelauswahl. Beim Untersuchen erscheinen sie unter der Charakterbeschreibung. Im Spieler-Tooltip sieht die Ergänzung beispielsweise so aus: `[iLvl 232.5 | GS 5000]`.
+In your character frame, the values appear below the title selector. When inspecting a player, they appear below the character description. A player tooltip might show `[iLvl 232.5 | GS 5000]`.
 
-- `...`: Die Daten werden noch geladen.
-- `?`: Es liegen keine Daten vor oder der Spieler kann gerade nicht untersucht werden.
-- `*`: Der gespeicherte Wert eines anderen Spielers ist älter als zehn Minuten.
+- `...`: Data is still loading.
+- `?`: No data is available, or the player cannot currently be inspected.
+- `*`: The cached value for another player is more than ten minutes old.
 
-Für fremde Spieler muss der Server zunächst Ausrüstungsdaten liefern. Dafür in der Nähe bleiben und kurz mit der Maus auf den Spieler zeigen. Im Kampf beginnt keine automatische Untersuchung. Ein geöffnetes Untersuchenfenster hat Vorrang.
+For other players, the server must first provide equipment data. Stay nearby and briefly hover over the player. Automatic inspections do not start in combat. An open inspect window takes priority.
 
-## Berechnung
+## Calculation
 
-Das Itemlevel ist der Durchschnitt über 17 Ausrüstungsplätze einschließlich Fernkampfwaffe oder Relikt. Hemd und Wappenrock zählen nicht. Leere Plätze zählen als null. Eine Zweihandwaffe zählt bei leerer Nebenhand für beide Waffenplätze.
+Item level is averaged across 17 equipment slots, including the ranged weapon or relic. Shirts and tabards are excluded. Empty slots count as zero. A two-handed weapon counts for both weapon slots when the off hand is empty.
 
-Der GearScore verwendet die klassische [GearScoreLite-Formel und ihre Gewichte](https://github.com/Arcitec/GearScoreLite_Reborn), ohne Abzug für fehlende Verzauberungen. Jägerwaffen, Titanengriff und Erbstücke werden gesondert berücksichtigt. Andere GearScore-Versionen können abweichende Werte liefern. Ein zusätzliches GearScore-Addon ist nicht erforderlich.
+GearScore uses the classic [GearScoreLite formula and slot weights](https://github.com/Arcitec/GearScoreLite_Reborn), without penalties for missing enchants. Hunter weapons, Titan's Grip and heirlooms receive their specific adjustments. Other GearScore versions may return different values. A separate GearScore addon is not required.
 
-## Abfragen
+## Inspections and caching
 
-Andere Spieler werden pro Hover höchstens einmal automatisch untersucht. Ergebnisse bleiben zehn Minuten aktuell und werden während dieser Zeit wiederverwendet. Zwischen automatischen Untersuchungen liegen mindestens zwei Sekunden. Eine ausbleibende Antwort beendet die Abfrage nach fünf Sekunden; für einen neuen Versuch die Maus weg- und zurückbewegen.
+Other players are automatically inspected at most once per hover. Results remain current for ten minutes and are reused during that period. Automatic inspections are spaced at least two seconds apart. An unanswered request times out after five seconds; move your mouse away and back to try again.
 
-Die eigene Ausrüstung wird bei passenden Spielereignissen neu berechnet. Fehlende Itemdaten werden zeitlich begrenzt nachgeladen. Fremde Spielerdaten werden nur für die laufende Sitzung gespeichert.
+Your own equipment is recalculated in response to relevant game events. Missing item data is retried for a limited time. Other players' data is only cached for the current session.
 
-RebuffedRaidMarket kann den eigenen GearScore über `RebuffedItemLevel_GetPlayerGearScore()` auslesen. Der Aufruf liest den gespeicherten Wert und startet keinen neuen Ausrüstungsscan.
+RebuffedRaidMarket can read your GearScore through `RebuffedItemLevel_GetPlayerGearScore()`. This returns the cached value without starting another equipment scan.

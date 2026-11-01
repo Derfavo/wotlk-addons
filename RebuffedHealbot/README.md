@@ -1,62 +1,62 @@
 # RebuffedHealbot
 
-RebuffedHealbot zeigt Gruppe und Raid in einem Heilfenster mit bis zu 40 Spielern. Klickbelegungen wirken die eingestellten Zauber; Vorschläge helfen bei der Auswahl von Heilungen, Entzauberungen und Tankbuffs. Die Texte sind auf Deutsch und Englisch verfügbar.
+RebuffedHealbot displays your party or raid in healing frames for up to 40 players. Click bindings cast your chosen spells, while suggestions help you choose heals, dispels and tank buffs. In-game text is available in English and German.
 
-## Heilfenster
+## Healing frames
 
-Die Schaltflächen **S**, **M** und **F** wechseln zwischen Safe Mana, Mixed und Full Heal. Safe Mana bevorzugt sparsame Heilungen, Mixed nutzt die eingestellten Schwellen und Full Heal reagiert schon auf kleinere Lebensdefizite. Der Wechsel ist auch im Kampf möglich.
+The **S**, **M** and **F** buttons select Safe Mana, Mixed and Full Heal. Safe Mana favors economical healing, Mixed uses your configured thresholds, and Full Heal responds to smaller health deficits. You can switch modes in combat.
 
-`…`, das Minimap-Symbol oder **Interface → AddOns → RebuffedHealbot** öffnen die Einstellungen. Dort lassen sich gelernte Zauber den Klickkombinationen zuweisen. Änderungen an diesen Belegungen sind nur außerhalb des Kampfes möglich. Die Belegung steht unter dem Spielernamen und im Tooltip.
+Open settings through `…`, the minimap icon or **Interface → AddOns → RebuffedHealbot**. You can assign learned spells to click combinations outside combat. Bindings appear below each player's name and in the tooltip.
 
-Das Fenster lässt sich an der Kopfzeile verschieben, wenn es in den Einstellungen entsperrt ist. Ein Rechtsklick auf das Minimap-Symbol zeigt und zentriert es außerhalb des Kampfes.
+Drag the header to move the frame when it is unlocked in settings. Right-click the minimap icon to show and center the frame outside combat.
 
-Die Heilvorschläge unterstützen Wiederherstellungsschamanen, Heiligpaladine, Disziplin- und Heiligpriester sowie Wiederherstellungsdruiden. Magier können Flüche entfernen. Andere Klassen können das Gruppenfenster zur Zielauswahl verwenden.
+Healing suggestions support Restoration Shamans, Holy Paladins, Discipline and Holy Priests, and Restoration Druids. Mages can remove curses. Other classes can use the group frames to select targets.
 
-## Tanks und Rollen
+## Tanks and roles
 
-Die automatische Tankauswahl verwendet zugewiesene Dungeonfinder-Rollen und die Haupttank-Zuweisung des Raidleaders. Im Tankmenü kann ein Spieler auch manuell gewählt werden. Ohne Tankzuweisung dient der Fokus als Ersatz, solo der eigene Charakter.
+Automatic tank selection uses assigned Dungeon Finder roles and the raid leader's main tank assignments. You can also choose a tank manually in the tank menu. If no tank is assigned, the addon falls back to your focus target, or to your own character when solo.
 
-Totenkopf und Kreuz kennzeichnen Tanks und Heiler innerhalb des Heilfensters. Sie setzen keine gemeinsamen Raid-Zielmarkierungen. Andere Spieler werden dafür nicht fortlaufend auf ihre Talente untersucht.
+Skull and cross icons identify tanks and healers inside the healing frames. They do not set shared raid target markers. The addon does not continually inspect other players' talents to determine their roles.
 
-## Eigene Buffs
+## Personal buffs
 
-Eine separate Leiste zeigt kleine, dauerhaft anklickbare Buff-Icons. Die Auswahl folgt automatisch der Klasse und dem Talentbaum mit den meisten Punkten. Angeboten werden nur erlernte Zauber.
+A separate bar shows small buff icons that remain visible and clickable. The selection follows your class and the talent tree with the most points. Only learned spells are offered.
 
-Ein roter Rand bedeutet: Der Buff fehlt oder hat nur noch eine Ladung. Aktive Buffs bleiben mit neutralem Rand sichtbar. Ein Linksklick erneuert den jeweiligen Buff auf dir oder verwendet das Gift bzw. den Waffenbuff auf dem vorgesehenen Waffenplatz. Die Icons funktionieren auch im Kampf. Mit gedrückter rechter Maustaste lässt sich die ganze Leiste außerhalb des Kampfes unabhängig vom Heilfenster verschieben.
+A red border means a buff is missing or has only one charge left. Active buffs remain visible with a neutral border. Left-click to refresh the buff on yourself or apply the poison or weapon buff to its assigned weapon slot. The icons also work in combat. Outside combat, hold the right mouse button and drag an icon to move the entire bar independently of the healing frame.
 
-| Klasse | Beispiele |
+| Class | Examples |
 | --- | --- |
-| Schamane | Wasser- oder Blitzschlagschild und Waffenbuffs passend zur Skillung |
-| Schurke | Sofort wirkendes Gift auf der Haupthand und Tödliches Gift auf der Nebenhand, soweit vorhanden |
-| Priester | Inneres Feuer, Seelenstärke, Willenskraft und Schattenschutz; bei Schatten auch Schattenform und Vampirumarmung |
-| Paladin | Siegel, Aura und Segen; bei Schutz auch Zorn der Gerechtigkeit |
-| Magier | Rüstung und Intelligenz |
-| Hexenmeister | Rüstung und erlernte Seelenverbindung bei lebendem Begleiter |
-| Druide | Mal der Wildnis; bei Wildem Kampf auch Dornen |
-| Krieger | Schlacht- oder Befehlsruf |
-| Jäger | Aspekt und erlernte Aura des Volltreffers |
-| Todesritter | Präsenz und Horn des Winters |
+| Shaman | Water Shield or Lightning Shield, plus weapon buffs for your specialization |
+| Rogue | Instant Poison on the main hand and Deadly Poison on the off hand, when available |
+| Priest | Inner Fire, Fortitude, Divine Spirit and Shadow Protection; Shadow also adds Shadowform and Vampiric Embrace |
+| Paladin | Seal, aura and blessing; Protection also adds Righteous Fury |
+| Mage | Armor and Intellect |
+| Warlock | Armor and learned Soul Link with a living pet |
+| Druid | Mark of the Wild; Feral also adds Thorns |
+| Warrior | Battle Shout or Commanding Shout |
+| Hunter | Aspect and learned Trueshot Aura |
+| Death Knight | Presence and Horn of Winter |
 
-Gifte müssen in den Taschen liegen. Der ursprüngliche Client kann den genauen Typ eines vorhandenen temporären Waffenbuffs nicht zuverlässig liefern; ein vorhandener Effekt wird deshalb akzeptiert. Permanente Verzauberungen und Runenschmiede-Runen werden nicht überwacht.
+Poisons must be in your bags. The original client cannot reliably identify the exact type of an existing temporary weapon buff, so an existing effect is accepted. Permanent enchants and Runeforging runes are not monitored.
 
-## Befehle und Mana-Warnung
+## Commands and mana warning
 
 - `/rhb mode safe`
 - `/rhb mode mixed`
 - `/rhb mode full`
 
-`/rebuffedhealbot` kann statt `/rhb` verwendet werden. Die automatische Meldung „Out of Mana!“ erscheint nur in einer Gruppe oder einem Raid im Rufkanal, höchstens einmal pro anhaltender Mana-Notlage.
+You can use `/rebuffedhealbot` instead of `/rhb`. The automatic “Out of Mana!” message is sent in /yell only while you are in a party or raid, at most once per continuous period of insufficient mana.
 
-## Grenzen
+## Limitations
 
-Die Vorschläge beruhen auf festen Prioritäten. Sie berechnen weder bevorstehende Bossfähigkeiten noch Sichtlinie, fremde eingehende Heilungen oder die genauen Abstände zwischen Gruppenmitgliedern. Die Entzauberungs-Ausnahmen sind nicht vollständig. Ob ein vorgeschlagener Zauber in der Situation passt, entscheidet der Spieler. Heilungen und Buffs benötigen immer einen eigenen Klick.
+Suggestions use fixed priorities. They do not predict boss abilities, check line of sight, account for incoming heals from other players or measure the exact distances between group members. The list of dispel exceptions is incomplete. You still need to decide whether a suggested spell fits the situation. Heals and buffs always require your own click.
 
-Die Prioritäten orientieren sich an den Warmane-Guides für [Schamanen](https://forum.warmane.com/printthread.php?page=1&pp=15&t=271702), [Paladine](https://forum.warmane.com/showthread.php?t=325569), [Disziplinpriester](https://forum.warmane.com/showthread.php?t=334926), Heiligpriester ([Guide 1](https://forum.warmane.com/showthread.php?t=448147), [Guide 2](https://forum.warmane.com/showthread.php?t=56440)) und [Druiden](https://forum.warmane.com/showthread.php?t=325633). Die Modi sind eine eigene Umsetzung dieser Grundlagen.
+Priorities draw on the Warmane guides for [Shamans](https://forum.warmane.com/printthread.php?page=1&pp=15&t=271702), [Paladins](https://forum.warmane.com/showthread.php?t=325569), [Discipline Priests](https://forum.warmane.com/showthread.php?t=334926), Holy Priests ([guide 1](https://forum.warmane.com/showthread.php?t=448147), [guide 2](https://forum.warmane.com/showthread.php?t=56440)) and [Druids](https://forum.warmane.com/showthread.php?t=325633). The three modes are a separate implementation based on those guides.
 
-Die Waffenbuff-Abfrage und sicheren Klickaktionen folgen den Schnittstellen des Blizzard-UI-Codes für 3.3.5: [BuffFrame.lua](https://github.com/tekkub/wow-ui-source/blob/3.3.5/FrameXML/BuffFrame.lua) und [SecureTemplates.lua](https://github.com/tekkub/wow-ui-source/blob/3.3.5/FrameXML/SecureTemplates.lua).
+Weapon buff queries and secure click actions follow the interfaces in Blizzard's 3.3.5 UI code: [BuffFrame.lua](https://github.com/tekkub/wow-ui-source/blob/3.3.5/FrameXML/BuffFrame.lua) and [SecureTemplates.lua](https://github.com/tekkub/wow-ui-source/blob/3.3.5/FrameXML/SecureTemplates.lua).
 
-## Umstieg von ChronixHeal
+## Upgrading from ChronixHeal
 
-RebuffedHealbot ist der neue Name von ChronixHeal. Bei einem Update WoW schließen und den alten Ordner `Interface/AddOns/ChronixHeal` entfernen, damit nicht beide Versionen geladen werden. Danach den Ordner `RebuffedHealbot` installieren und WoW neu starten.
+RebuffedHealbot is the new name of ChronixHeal. Close WoW and remove the old `Interface/AddOns/ChronixHeal` folder so both versions cannot load together. Install the `RebuffedHealbot` folder, then restart WoW.
 
-Wer seine Einstellungen übernehmen möchte, kopiert bei geschlossenem Spiel die Datei `WTF/Account/<Account>/SavedVariables/ChronixHeal.lua` nach `RebuffedHealbot.lua` im selben Verzeichnis. Eine bereits vorhandene `RebuffedHealbot.lua` vorher sichern. Der Tabellenname `ChronixHealDB` in der Datei bleibt unverändert. Die alten Befehle `/chheal` und `/chronixheal` funktionieren weiterhin.
+To keep your settings, copy `WTF/Account/<Account>/SavedVariables/ChronixHeal.lua` to `RebuffedHealbot.lua` in the same directory while the game is closed. Back up any existing `RebuffedHealbot.lua` first. Leave the `ChronixHealDB` table name inside the file unchanged. The old `/chheal` and `/chronixheal` commands still work.
