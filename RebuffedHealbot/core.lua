@@ -1659,9 +1659,11 @@ events:SetScript("OnUpdate", function(self, elapsed)
     end
 end)
 
-SLASH_CHRONIXHEAL1 = "/chheal"
-SLASH_CHRONIXHEAL2 = "/chronixheal"
-SlashCmdList.CHRONIXHEAL = handleCommand
+SLASH_REBUFFEDHEALBOT1 = "/rhb"
+SLASH_REBUFFEDHEALBOT2 = "/rebuffedhealbot"
+SLASH_REBUFFEDHEALBOT3 = "/chheal"
+SLASH_REBUFFEDHEALBOT4 = "/chronixheal"
+SlashCmdList.REBUFFEDHEALBOT = handleCommand
 
 -- Kept in the existing core file so an update needs only /reload, not discovery
 -- of a new addon or Lua file. Uses the grid's events and never adds a ticker.

@@ -1,12 +1,12 @@
-# ChronixHeal
+# RebuffedHealbot
 
-ChronixHeal zeigt Gruppe und Raid in einem Heilfenster mit bis zu 40 Spielern. Klickbelegungen wirken die eingestellten Zauber; Vorschläge helfen bei der Auswahl von Heilungen, Entzauberungen und Tankbuffs. Die Texte sind auf Deutsch und Englisch verfügbar.
+RebuffedHealbot zeigt Gruppe und Raid in einem Heilfenster mit bis zu 40 Spielern. Klickbelegungen wirken die eingestellten Zauber; Vorschläge helfen bei der Auswahl von Heilungen, Entzauberungen und Tankbuffs. Die Texte sind auf Deutsch und Englisch verfügbar.
 
 ## Heilfenster
 
 Die Schaltflächen **S**, **M** und **F** wechseln zwischen Safe Mana, Mixed und Full Heal. Safe Mana bevorzugt sparsame Heilungen, Mixed nutzt die eingestellten Schwellen und Full Heal reagiert schon auf kleinere Lebensdefizite. Der Wechsel ist auch im Kampf möglich.
 
-`…`, das Minimap-Symbol oder **Interface → AddOns → ChronixHeal** öffnen die Einstellungen. Dort lassen sich gelernte Zauber den Klickkombinationen zuweisen. Änderungen an diesen Belegungen sind nur außerhalb des Kampfes möglich. Die Belegung steht unter dem Spielernamen und im Tooltip.
+`…`, das Minimap-Symbol oder **Interface → AddOns → RebuffedHealbot** öffnen die Einstellungen. Dort lassen sich gelernte Zauber den Klickkombinationen zuweisen. Änderungen an diesen Belegungen sind nur außerhalb des Kampfes möglich. Die Belegung steht unter dem Spielernamen und im Tooltip.
 
 Das Fenster lässt sich an der Kopfzeile verschieben, wenn es in den Einstellungen entsperrt ist. Ein Rechtsklick auf das Minimap-Symbol zeigt und zentriert es außerhalb des Kampfes.
 
@@ -41,11 +41,11 @@ Gifte müssen in den Taschen liegen. Der ursprüngliche Client kann den genauen 
 
 ## Befehle und Mana-Warnung
 
-- `/chheal mode safe`
-- `/chheal mode mixed`
-- `/chheal mode full`
+- `/rhb mode safe`
+- `/rhb mode mixed`
+- `/rhb mode full`
 
-`/chronixheal` kann statt `/chheal` verwendet werden. Die automatische Meldung „Out of Mana!“ erscheint nur in einer Gruppe oder einem Raid im Rufkanal, höchstens einmal pro anhaltender Mana-Notlage.
+`/rebuffedhealbot` kann statt `/rhb` verwendet werden. Die automatische Meldung „Out of Mana!“ erscheint nur in einer Gruppe oder einem Raid im Rufkanal, höchstens einmal pro anhaltender Mana-Notlage.
 
 ## Grenzen
 
@@ -54,3 +54,9 @@ Die Vorschläge beruhen auf festen Prioritäten. Sie berechnen weder bevorstehen
 Die Prioritäten orientieren sich an den Warmane-Guides für [Schamanen](https://forum.warmane.com/printthread.php?page=1&pp=15&t=271702), [Paladine](https://forum.warmane.com/showthread.php?t=325569), [Disziplinpriester](https://forum.warmane.com/showthread.php?t=334926), Heiligpriester ([Guide 1](https://forum.warmane.com/showthread.php?t=448147), [Guide 2](https://forum.warmane.com/showthread.php?t=56440)) und [Druiden](https://forum.warmane.com/showthread.php?t=325633). Die Modi sind eine eigene Umsetzung dieser Grundlagen.
 
 Die Waffenbuff-Abfrage und sicheren Klickaktionen folgen den Schnittstellen des Blizzard-UI-Codes für 3.3.5: [BuffFrame.lua](https://github.com/tekkub/wow-ui-source/blob/3.3.5/FrameXML/BuffFrame.lua) und [SecureTemplates.lua](https://github.com/tekkub/wow-ui-source/blob/3.3.5/FrameXML/SecureTemplates.lua).
+
+## Umstieg von ChronixHeal
+
+RebuffedHealbot ist der neue Name von ChronixHeal. Bei einem Update WoW schließen und den alten Ordner `Interface/AddOns/ChronixHeal` entfernen, damit nicht beide Versionen geladen werden. Danach den Ordner `RebuffedHealbot` installieren und WoW neu starten.
+
+Wer seine Einstellungen übernehmen möchte, kopiert bei geschlossenem Spiel die Datei `WTF/Account/<Account>/SavedVariables/ChronixHeal.lua` nach `RebuffedHealbot.lua` im selben Verzeichnis. Eine bereits vorhandene `RebuffedHealbot.lua` vorher sichern. Der Tabellenname `ChronixHealDB` in der Datei bleibt unverändert. Die alten Befehle `/chheal` und `/chronixheal` funktionieren weiterhin.
