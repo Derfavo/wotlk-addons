@@ -4,10 +4,10 @@ Each addon now has its own repository, version history and releases. Use these p
 
 | Addon | Current version | Downloads |
 | --- | --- | --- |
-| [RebuffedHealbot](https://github.com/Derfavo/RebuffedHealbot) | 0.6.6 | [Releases](https://github.com/Derfavo/RebuffedHealbot/releases/latest) |
-| [RebuffedItemLevel](https://github.com/Derfavo/RebuffedItemLevel) | 1.2.5 | [Releases](https://github.com/Derfavo/RebuffedItemLevel/releases/latest) |
-| [RebuffedRaidMarket](https://github.com/Derfavo/RebuffedRaidMarket) | 1.2.2 | [Releases](https://github.com/Derfavo/RebuffedRaidMarket/releases/latest) |
-| [RebuffedUpgrade](https://github.com/Derfavo/RebuffedUpgrade) | 1.0.3 | [Releases](https://github.com/Derfavo/RebuffedUpgrade/releases/latest) |
+| [RebuffedHealbot](https://github.com/Derfavo/RebuffedHealbot) | 0.6.7 | [Releases](https://github.com/Derfavo/RebuffedHealbot/releases/latest) |
+| [RebuffedItemLevel](https://github.com/Derfavo/RebuffedItemLevel) | 1.2.6 | [Releases](https://github.com/Derfavo/RebuffedItemLevel/releases/latest) |
+| [RebuffedRaidMarket](https://github.com/Derfavo/RebuffedRaidMarket) | 1.2.3 | [Releases](https://github.com/Derfavo/RebuffedRaidMarket/releases/latest) |
+| [RebuffedUpgrade](https://github.com/Derfavo/RebuffedUpgrade) | 1.0.4 | [Releases](https://github.com/Derfavo/RebuffedUpgrade/releases/latest) |
 
 ## Installation
 
