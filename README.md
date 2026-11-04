@@ -9,7 +9,7 @@ Each addon now has its own repository, version history and releases. Use these p
 | [RebuffedRaidMarket](https://github.com/Derfavo/RebuffedRaidMarket) | 1.3.0 | [Releases](https://github.com/Derfavo/RebuffedRaidMarket/releases/latest) |
 | [RebuffedUpgrade](https://github.com/Derfavo/RebuffedUpgrade) | 1.0.4 | [Releases](https://github.com/Derfavo/RebuffedUpgrade/releases/latest) |
 | [RebuffedMessanger](https://github.com/Derfavo/RebuffedMessanger) | 1.0.3 | [Releases](https://github.com/Derfavo/RebuffedMessanger/releases/latest) |
-| [RebuffedAltoholic](https://github.com/Derfavo/RebuffedAltoholic) | 1.0.0 | [Source ZIP](https://github.com/Derfavo/RebuffedAltoholic/archive/refs/heads/main.zip) |
+| [RebuffedAltoholic](https://github.com/Derfavo/RebuffedAltoholic) | 1.0.0 | [Releases](https://github.com/Derfavo/RebuffedAltoholic/releases/latest) |
 
 ## Installation
 
