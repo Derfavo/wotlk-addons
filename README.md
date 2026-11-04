@@ -9,10 +9,11 @@ Each addon now has its own repository, version history and releases. Use these p
 | [RebuffedRaidMarket](https://github.com/Derfavo/RebuffedRaidMarket) | 1.3.0 | [Releases](https://github.com/Derfavo/RebuffedRaidMarket/releases/latest) |
 | [RebuffedUpgrade](https://github.com/Derfavo/RebuffedUpgrade) | 1.0.4 | [Releases](https://github.com/Derfavo/RebuffedUpgrade/releases/latest) |
 | [RebuffedMessanger](https://github.com/Derfavo/RebuffedMessanger) | 1.0.3 | [Releases](https://github.com/Derfavo/RebuffedMessanger/releases/latest) |
+| [RebuffedAltoholic](https://github.com/Derfavo/RebuffedAltoholic) | 1.0.0 | [Source ZIP](https://github.com/Derfavo/RebuffedAltoholic/archive/refs/heads/main.zip) |
 
 ## Installation
 
-Download a release's Source code (zip), extract it, close WoW and copy the folder named after the addon into `Interface/AddOns/`. Do not copy the outer repository folder. RebuffedUpgrade also requires Pawn 1.3.8 for WoW 3.3.5a. RebuffedRaidMarket needs RebuffedItemLevel to include GearScore in your own ads.
+Download a release's Source code (zip) or the linked source ZIP, extract it, close WoW and copy the folder named after the addon into `Interface/AddOns/`. Do not copy the outer repository folder. RebuffedUpgrade also requires Pawn 1.3.8 for WoW 3.3.5a. RebuffedRaidMarket needs RebuffedItemLevel to include GearScore in your own ads.
 
 ## Update notices
 
